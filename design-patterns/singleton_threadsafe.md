@@ -3,7 +3,7 @@
 **Intent:**\
 Lets you ensure that a class has only one instance, while providing a
 global access point to this instance. One instance per each subclass (if any).
-This implementation is thread-safe.
+This implementation is thread-safe and used in multi-threaded applications.
 ---
 
 ## Python
