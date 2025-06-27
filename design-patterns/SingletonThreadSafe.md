@@ -11,7 +11,6 @@ This implementation is thread-safe and used in multi-threaded applications.
 
 from threading import Lock, Thread
 
-
 class SingletonMeta(type):
     """
     This is a thread-safe implementation of Singleton.
@@ -33,7 +32,6 @@ class SingletonMeta(type):
         # simultaneously pass the previous conditional and reach this
         # point almost at the same time. The first of them will acquire
         # lock and will proceed further, while the rest will wait here.
-        #
         with cls._lock:
             # The first thread to acquire the lock, reaches this
             # conditional, goes inside and creates the Singleton
@@ -42,7 +40,6 @@ class SingletonMeta(type):
             # enter this section. But since the Singleton field is
             # already initialized, the thread won't create a new
             # object.
-            #
             # First thread to acquire the lock, reaches this
             # conditional, goes inside and creates the Singleton
             # instance. Once it leaves the lock block, a thread that
@@ -54,7 +51,6 @@ class SingletonMeta(type):
                 instance = super().__call__(*args, **kwargs)
                 cls._instances[cls] = instance
         return cls._instances[cls]
-
 
 class Singleton(metaclass=SingletonMeta):
     value: str = None
@@ -71,11 +67,9 @@ class Singleton(metaclass=SingletonMeta):
         be executed on its instance.
         """
 
-
 def test_singleton(value: str) -> None:
     singleton = Singleton(value)
     print(singleton.value)
-
 
 if __name__ == "__main__":
     # The client code.
@@ -88,7 +82,6 @@ if __name__ == "__main__":
     process2 = Thread(target=test_singleton, args=("BAR",))
     process1.start()
     process2.start()
-
 
 # text output
 # If you see the same value, then singleton was reused (yay!)

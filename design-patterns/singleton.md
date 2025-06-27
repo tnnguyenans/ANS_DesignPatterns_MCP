@@ -4,9 +4,7 @@
 Implementation of the Singleton design pattern.
 ---
 
-
 ---
-
 
 ---
 
