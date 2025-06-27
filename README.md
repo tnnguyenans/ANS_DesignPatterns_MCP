@@ -14,9 +14,38 @@ The ANS Design Patterns MCP Server is a Python implementation of a Model Context
 
 ## Available Design Patterns
 
-- Singleton Pattern
-- Factory Pattern
-- More patterns to be added...
+### Creational Patterns
+- Abstract Factory Pattern
+- Builder Pattern
+- Factory Method Pattern
+- Prototype Pattern
+- Singleton Pattern (with Thread-Safe variant)
+
+### Structural Patterns
+- Adapter Pattern
+- Bridge Pattern
+- Composite Pattern
+- Decorator Pattern
+- Facade Pattern
+- Flyweight Pattern
+- Proxy Pattern
+
+### Behavioral Patterns
+- Chain of Responsibility Pattern
+- Command Pattern
+- Iterator Pattern
+- Mediator Pattern
+- Memento Pattern
+- Observer Pattern
+- State Pattern
+- Strategy Pattern
+- Template Method Pattern
+- Visitor Pattern
+
+### Real-World Implementations
+- Builder (Real World)
+- Singleton (Real World)
+- Visitor (Real World)
 
 ## Directory Structure
 
@@ -27,9 +56,30 @@ ANS_DesignPatterns_MCP/
 ├── mcp-config.js          # Configuration script
 ├── config.json            # Server configuration
 ├── design-patterns/       # Directory containing design pattern documentation
-│   ├── singleton.md       # Singleton pattern documentation
-│   ├── factory.md         # Factory pattern documentation
-│   └── ...                # Other pattern documentation
+│   ├── AbstractFactory.md # Abstract Factory pattern documentation
+│   ├── Adapter.md         # Adapter pattern documentation
+│   ├── Bridge.md          # Bridge pattern documentation
+│   ├── Builder.md         # Builder pattern documentation
+│   ├── ChainOfResponsibility.md # Chain of Responsibility pattern documentation
+│   ├── Command.md         # Command pattern documentation
+│   ├── Composite.md       # Composite pattern documentation
+│   ├── Decorator.md       # Decorator pattern documentation
+│   ├── Facade.md          # Facade pattern documentation
+│   ├── FactoryMethod.md   # Factory Method pattern documentation
+│   ├── Flyweight.md       # Flyweight pattern documentation
+│   ├── Iterator.md        # Iterator pattern documentation
+│   ├── Mediator.md        # Mediator pattern documentation
+│   ├── Memento.md         # Memento pattern documentation
+│   ├── Observer.md        # Observer pattern documentation
+│   ├── Prototype.md       # Prototype pattern documentation
+│   ├── Proxy.md           # Proxy pattern documentation
+│   ├── Singleton.md       # Singleton pattern documentation
+│   ├── SingletonThreadSafe.md # Thread-safe Singleton pattern documentation
+│   ├── State.md           # State pattern documentation
+│   ├── Strategy.md        # Strategy pattern documentation
+│   ├── TemplateMethod.md  # Template Method pattern documentation
+│   ├── Visitor.md         # Visitor pattern documentation
+│   └── Real-World variants # Additional real-world implementations
 └── README.md              # This file
 ```
 
