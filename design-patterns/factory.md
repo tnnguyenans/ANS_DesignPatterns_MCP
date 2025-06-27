@@ -2,7 +2,6 @@
 
 **Intent:**\
 Define an interface for creating an object, but let subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to subclasses.
-
 ---
 
 ## Python
@@ -159,6 +158,8 @@ int main() {
 
 - [Refactoring Guru: Factory Method Pattern](https://refactoring.guru/design-patterns/factory-method)
 - [Wikipedia: Factory Method Pattern](https://en.wikipedia.org/wiki/Factory_method_pattern)
+- [GitHub: Design Patterns C++](https://github.com/RefactoringGuru/design-patterns-cpp.git)
+- [GitHub: Design Patterns Python](https://github.com/RefactoringGuru/design-patterns-python.git)
 
 ---
 
