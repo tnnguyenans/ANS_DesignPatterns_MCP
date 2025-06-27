@@ -27,3 +27,8 @@ npm-debug.log
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# Design pattern generation files
+design-patterns/CLEANUP_SUMMARY.md
+design-patterns/README_Generation_Summary.md
+design-patterns/generate_design_patterns.py
