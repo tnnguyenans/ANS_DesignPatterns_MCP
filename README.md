@@ -73,6 +73,24 @@ python server.py
 
 ## Using the MCP Server
 
+### MCP Configuration
+
+To configure the MCP server in Windsurf or other AI tools, add the following configuration to your MCP config file (typically located at `~/.codeium/windsurf/mcp_config.json` or similar):
+
+```json
+"ans-designpatterns": {
+  "command": "python",
+  "args": [
+    "C:\\Programs\\PythonTraining\\ANS_DesignPatterns_MCP\\server.py"
+  ],
+  "env": {
+    "PYTHONUNBUFFERED": "1"
+  }
+}
+```
+
+Note: Adjust the path in `args` to match your actual installation directory.
+
 ### With Windsurf
 
 1. Ensure the MCP server is running
@@ -118,4 +136,4 @@ If you encounter issues:
 
 ## License
 
-[Your License Here]
+This work is licensed under a [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](https://creativecommons.org/licenses/by-nc-nd/4.0/).
